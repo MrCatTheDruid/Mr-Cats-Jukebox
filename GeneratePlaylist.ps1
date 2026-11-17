@@ -3,7 +3,7 @@
     [switch]$UseWinRAR = $false,
     [string[]]$MusicFolders = $null,
     [switch]$FixFiles = $false,
-    # Skip the album-art step (covers for the Spotify-style UI)
+    # Skip the album-art step (covers for the modern-style UI)
     [switch]$SkipArt = $false
 )
 
@@ -2374,7 +2374,7 @@ if ($oggSanitized -eq 0 -and $oggSkipped -eq 0 -and $oggFiles.Count -gt 0) {
 
 
 # ===========================================================================
-# ALBUM ART (Spotify-style thumbnails)
+# ALBUM ART (modern-style thumbnails)
 # ---------------------------------------------------------------------------
 # WoW cannot download anything itself, so covers are fetched HERE on your PC
 # and saved as 256x256 .tga files in Art\ that the addon can display.
